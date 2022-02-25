@@ -53,7 +53,6 @@ const read = function(path, callback) {
     fs.readFile(`${dataPath}/${path}`, 'utf-8', function(data, err) {
         if (err) {
             if (callback) { return callback(data, err) }
-            return data, err
         } else {
             if (callback) { return callback(data, err) }
         }
